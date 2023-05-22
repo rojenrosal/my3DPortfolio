@@ -331,7 +331,7 @@ const projects = [
       },
     ],
     image: portf,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/rojenrosal/my3DPortfolio",
   },
   {
     name: "Amazon Web Scraper",
@@ -348,7 +348,7 @@ const projects = [
       },
     ],
     image: amazon,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/rojenrosal/amazon_scraper",
   },
 
   {
