@@ -176,6 +176,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Present",
     points: [
+      "TOOK A LONG BREAK DUE TO HEALTH AND PERSONAL REASONS BUT NOW I'M BACK",
       "I've been continuously updating and developing a portfolio that showcases projects aligned with the latest industry trends, demonstrating proficiency in cutting-edge technologies and staying up-to-date with the ever-evolving tech landscape.",
       "I'm capable of Full stack development using the MERN (MongoDB, Express.js, React.js, Node.js) stack, and I'm proficient in both JavaScript and TypeScript.",
       "I have made projects that involves technologies like Next.js and React Native for building scalable and performant web and mobile applications.",
