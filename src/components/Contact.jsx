@@ -122,7 +122,7 @@ const Contact = () => {
           </button>
           <footer className="text-center mt-8">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} RojenDev. All Rights Reserved.
+              © {new Date().getFullYear()} Rojen Rosal Dev. All Rights Reserved.
             </p>
           </footer>
         </form>
