@@ -24,6 +24,7 @@ import getaka from "./company/getaka.png";
 import cell from "./company/cell.png";
 import mern from "./company/mern.png";
 import jobsearch from "./company/jobsearch.png";
+import adaca from "./company/adaca.png";
 
 import soon from "./projects/soon.png";
 import portf from "./projects/portf.png";
@@ -73,4 +74,5 @@ export {
   imageAI,
   amazon,
   headphones,
+  adaca,
 };

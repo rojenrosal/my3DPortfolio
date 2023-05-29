@@ -12,16 +12,13 @@ import {
   tailwind,
   nodejs,
   mongodb,
-  git,
   getaka,
   cell,
-  jobsearch,
   mern,
   soon,
   progress,
   vidchat,
   travel,
-  threejs,
   bank,
   imageAI,
   unichat,
@@ -30,6 +27,7 @@ import {
   headphones,
   portf,
   next,
+  adaca,
 } from "../assets";
 
 export const navLinks = [
@@ -107,14 +105,6 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
-  // {
-  //   name: "Three JS",
-  //   icon: threejs,
-  // },
-  // {
-  //   name: "git",
-  //   icon: git,
-  // },
 ];
 
 const experiences = [
@@ -169,22 +159,34 @@ const experiences = [
       "Experienced agile methodologies such as Kanban and Scrum. Utilized Notion for project management, maintained Kanban boards, and actively participated in Scrum ceremonies including daily stand-ups, sprint planning, and retrospectives.",
     ],
   },
+  // {
+  //   title: "Hire Me!",
+  //   company_name: "Currently Looking for a Full Time Developer Role!",
+  //   icon: jobsearch,
+  //   iconBg: "#E6DEDD",
+  //   date: "Present",
+  //   points: [
+  //     "TOOK A LONG BREAK DUE TO HEALTH AND PERSONAL REASONS BUT NOW I'M BACK!",
+  //     "I've been continuously updating and developing a portfolio that showcases projects aligned with the latest industry trends, demonstrating proficiency in cutting-edge technologies and staying up-to-date with the ever-evolving tech landscape.",
+  //     "I'm capable of Full stack development using the MERN (MongoDB, Express.js, React.js, Node.js) stack, and I'm proficient in both JavaScript and TypeScript.",
+  //     "I have made projects that involves technologies like Next.js and React Native for building scalable and performant web and mobile applications.",
+  //     "Familiarity with Vue.js and Nuxt.js, enabling development in the Vue ecosystem",
+  //     "Exposure to Python, Go, Flutter, and Rust, allowing for versatility in different programming languages and frameworks.",
+  //     "Currently expanding knowledge in three.js and 3D rendering to explore immersive and interactive web experiences.",
+  //     "Actively engaged in AI development, keeping up with the latest advancements and incorporating AI technologies into projects.",
+  //     "Aspiring to learn C# for game development, with a keen interest in exploring the gaming industry and creating interactive experiences.",
+  //   ],
+  // },
   {
-    title: "Hire Me!",
-    company_name: "Currently Looking for a Full Time Developer Role!",
-    icon: jobsearch,
+    title: "Front End Developer",
+    company_name: "Adaca",
+    icon: adaca,
     iconBg: "#E6DEDD",
     date: "Present",
     points: [
-      "TOOK A LONG BREAK DUE TO HEALTH AND PERSONAL REASONS BUT NOW I'M BACK!",
-      "I've been continuously updating and developing a portfolio that showcases projects aligned with the latest industry trends, demonstrating proficiency in cutting-edge technologies and staying up-to-date with the ever-evolving tech landscape.",
-      "I'm capable of Full stack development using the MERN (MongoDB, Express.js, React.js, Node.js) stack, and I'm proficient in both JavaScript and TypeScript.",
-      "I have made projects that involves technologies like Next.js and React Native for building scalable and performant web and mobile applications.",
-      "Familiarity with Vue.js and Nuxt.js, enabling development in the Vue ecosystem",
-      "Exposure to Python, Go, Flutter, and Rust, allowing for versatility in different programming languages and frameworks.",
-      "Currently expanding knowledge in three.js and 3D rendering to explore immersive and interactive web experiences.",
-      "Actively engaged in AI development, keeping up with the latest advancements and incorporating AI technologies into projects.",
-      "Aspiring to learn C# for game development, with a keen interest in exploring the gaming industry and creating interactive experiences.",
+      "Front End Web Developer for a Client that specializes in supply chain and trade platforms.",
+      "Uses Next JS with Typescript for developing components",
+      "Uses Chakra UI for system Design.",
     ],
   },
 ];
