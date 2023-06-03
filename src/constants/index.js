@@ -178,7 +178,7 @@ const experiences = [
   //   ],
   // },
   {
-    title: "Front End Developer",
+    title: "Software Engineer",
     company_name: "Adaca",
     icon: adaca,
     iconBg: "#E6DEDD",
@@ -186,7 +186,7 @@ const experiences = [
     points: [
       "Front End Web Developer for a Client that specializes in supply chain and trade platforms.",
       "Uses Next JS with Typescript for developing components",
-      "Uses Chakra UI for system Design.",
+      "Uses Chakra UI for System Design and Styling",
     ],
   },
 ];
