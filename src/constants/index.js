@@ -184,7 +184,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "Present",
     points: [
-      "Front End Web Developer for a Client that specializes in supply chain and trade platforms.",
+      "Senior React/Typescript Developer for a ASX listed Client that offers Life Insurances. ",
+      "Part of the team that will create internal and External Apps.",
+      "Senior Front End Web Developer for a Client that specializes in supply chain and trade platforms.",
       "Uses Next JS with Typescript for developing components",
       "Uses Chakra UI for System Design and Styling",
     ],
