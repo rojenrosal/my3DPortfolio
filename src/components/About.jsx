@@ -6,20 +6,21 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+// eslint-disable-next-line react-refresh/only-export-components
 const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt
+    className="xs:w-[250px] w-full"
+    options={{
+      max: 45,
+      scale: 1,
+      speed: 450,
+    }}
+  >
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
+      <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
         <img
           src={icon}
           alt="web-development"
@@ -45,16 +46,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        I am a versatile full stack developer skilled in the MERN stack,
-        proficient in JavaScript and TypeScript. With expertise in Next.js and
-        React Native, I specialize in building scalable and performant web and
-        mobile applications.In addition, I have exposure to multiple other
-        languages allowing me to adapt and work with diverse frameworks.
+        I am a Senior Full Stack Software Engineer with 6+ years of experience
+        building scalable web and mobile applications using Next.js, React,
+        TypeScript, and Node.js. My expertise spans full-stack architecture,
+        scalable systems, and AI-assisted development workflows, with a proven
+        track record of delivering products and features that drive business
+        growth and engineering efficiency.
         <br />
-        Continuously updating my portfolio with projects that showcase my
-        proficiency in cutting-edge technologies, I demonstrate my commitment to
-        staying current in the ever-evolving tech landscape. Let's work together
-        to bring your ideas to life!
+        I have led development across customer-facing platforms, admin systems,
+        and marketing features, integrating tools like Prisma, Supabase,
+        Tailwind CSS, shadcn/ui, Stripe, Klaviyo, and OneSignal. Passionate about
+        clean architecture, performance, and continuous learning, I am always
+        ready to collaborate and bring ambitious ideas to life.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10 place-content-center">

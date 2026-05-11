@@ -1,5 +1,3 @@
-import { styles } from "../styles";
-import { experiences } from "../constants";
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 
 const ExperienceCard = ({ experience }) => {

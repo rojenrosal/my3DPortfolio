@@ -25,6 +25,7 @@ import cell from "./company/cell.png";
 import mern from "./company/mern.png";
 import jobsearch from "./company/jobsearch.png";
 import adaca from "./company/adaca.png";
+import va4u from "./company/va4u.png";
 
 import soon from "./projects/soon.png";
 import portf from "./projects/portf.png";
@@ -75,4 +76,5 @@ export {
   amazon,
   headphones,
   adaca,
+  va4u,
 };

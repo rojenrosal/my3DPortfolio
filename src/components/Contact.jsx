@@ -7,28 +7,61 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+const LIMITS = { name: 80, email: 120, message: 2000 };
+const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const COOLDOWN_MS = 30_000;
+
 const Contact = () => {
   const formRef = useRef();
+  const lastSubmitRef = useRef(0);
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
+    website: "",
   });
 
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
-    const { target } = e;
-    const { name, value } = target;
-
-    setForm({
-      ...form,
-      [name]: value,
-    });
+    const { name, value } = e.target;
+    const limit = LIMITS[name];
+    setForm((prev) => ({
+      ...prev,
+      [name]: limit ? value.slice(0, limit) : value,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (form.website) return;
+
+    const name = form.name.trim();
+    const email = form.email.trim();
+    const message = form.message.trim();
+
+    if (!name || !email || !message) {
+      alert("Please fill in all fields.");
+      return;
+    }
+    if (!EMAIL_RE.test(email) || email.length > LIMITS.email) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+    if (message.length < 10) {
+      alert("Please write a slightly longer message.");
+      return;
+    }
+
+    const now = Date.now();
+    if (now - lastSubmitRef.current < COOLDOWN_MS) {
+      const wait = Math.ceil((COOLDOWN_MS - (now - lastSubmitRef.current)) / 1000);
+      alert(`Please wait ${wait}s before sending another message.`);
+      return;
+    }
+    lastSubmitRef.current = now;
+
     setLoading(true);
 
     emailjs
@@ -36,11 +69,11 @@ const Contact = () => {
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
-          from_name: form.name,
+          from_name: name,
           to_name: "Rojen Rosal",
-          from_email: form.email,
+          from_email: email,
           to_email: "rojenmail@gmail.com",
-          message: form.message,
+          message,
         },
         import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
@@ -49,11 +82,7 @@ const Contact = () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
 
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          setForm({ name: "", email: "", message: "", website: "" });
         },
         (error) => {
           setLoading(false);
@@ -79,7 +108,25 @@ const Contact = () => {
           ref={formRef}
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
+          noValidate
         >
+          <input
+            type="text"
+            name="website"
+            value={form.website}
+            onChange={handleChange}
+            tabIndex={-1}
+            autoComplete="off"
+            aria-hidden="true"
+            style={{
+              position: "absolute",
+              left: "-10000px",
+              width: 1,
+              height: 1,
+              opacity: 0,
+              pointerEvents: "none",
+            }}
+          />
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
@@ -87,6 +134,9 @@ const Contact = () => {
               name="name"
               value={form.name}
               onChange={handleChange}
+              maxLength={LIMITS.name}
+              required
+              autoComplete="name"
               placeholder="What's your name?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -98,6 +148,10 @@ const Contact = () => {
               name="email"
               value={form.email}
               onChange={handleChange}
+              maxLength={LIMITS.email}
+              required
+              autoComplete="email"
+              inputMode="email"
               placeholder="What's your email address?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -109,6 +163,8 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
+              maxLength={LIMITS.message}
+              required
               placeholder="What do you want to say?"
               className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
@@ -116,7 +172,8 @@ const Contact = () => {
 
           <button
             type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
+            disabled={loading}
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary disabled:opacity-60"
           >
             {loading ? "Sending..." : "Send"}
           </button>

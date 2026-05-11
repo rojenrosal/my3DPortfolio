@@ -28,6 +28,7 @@ import {
   portf,
   next,
   adaca,
+  va4u,
 } from "../assets";
 
 export const navLinks = [
@@ -109,86 +110,78 @@ const technologies = [
 
 const experiences = [
   {
-    title: " Freelance Software Developer",
-    company_name: "",
-    icon: mern,
-    iconBg: "#383E56",
-    date: "Sept 2019 - Sept 2021",
+    title: "Senior Software Engineer (Full Stack)",
+    company_name: "VA4U — Queensland, Australia (Remote)",
+    icon: va4u,
+    iconBg: "#E6DEDD",
+    date: "Aug 2025 - Present",
     points: [
-      "Created Web Applications for clients using the MERN (MongoDB, Express.js, React.js, Node.js) Stack, delivering full-stack solutions that met client requirements.",
-      "Developed Portfolio websites for local professionals, such as Architects and a Dental Clinic, using JavaScript and CSS with Sass. These visually appealing and responsive websites showcased their work and services effectively.",
-      "Designed and implemented an online shop for a local business using React, Node.js, and Strapi.io. This e-commerce solution included features like product listings, shopping cart functionality, secure payment integration, and inventory management.",
-      "Developed an admin dashboard for a travel app using React and Tailwind CSS, providing an intuitive interface for managing backend operations and data.",
-      "Utilized Python for script development, automating tasks and enhancing efficiency",
-      "Experienced using Git and GitHub as part of a team, facilitating collaboration and version control.",
+      "Lead Full Stack Developer for a large-scale Australian rewards and cashback platform focused on memberships, e-commerce, analytics, and customer engagement.",
+      "Led development of customer-facing platforms, admin systems, and marketing features across web and mobile applications.",
+      "Drove architecture and technology decisions across frontend, backend, and infrastructure systems.",
+      "Built scalable analytics and tracking solutions for cashback, promotions, engagement, and product performance.",
+      "Integrated third-party platforms including Klaviyo, OneSignal, Kinde, Stripe, Azupay, Meta Ads, and TikTok Ads.",
+      "Worked extensively with Next.js, TypeScript, Prisma, Supabase, Zustand, Tailwind CSS, and shadcn/ui.",
+      "Helped drive significant business and sales growth through scalable e-commerce, analytics, and customer engagement solutions.",
+      "Improved platform maintainability, performance, and overall user experience across the ecosystem.",
     ],
   },
   {
-    title: "Associate Software Engineer",
-    company_name: "Getaka Labs",
-    icon: getaka,
+    title: "Senior Software Engineer (Full Stack)",
+    company_name: "Adaca — Taguig City, Philippines (Remote)",
+    icon: adaca,
     iconBg: "#E6DEDD",
-    date: "Sept 2021 - March 2022",
+    date: "May 2023 - July 2025",
     points: [
-      "Front End Developer for a job search web application, converting Figma designs into code using Next.js, React, Redux-saga, Prisma, Redis, and Sqlite.",
-      "Conducted Testing and Quality Assessment for the web application, ensuring functionality, performance, and user experience met standards.",
-      "Full Stack Developer for an investment/business website with CMS feature, utilizing Next.js, React.js, Tailwind CSS, Node.js, Strapi.io, and Firebase.",
-      "Backend Developer for a licensure examination reviewer mobile app, using Node.js and PostgreSQL for infrastructure and functionality.",
-      "Developed HTML emails and created microsites for an insurance company using React and Tailwind.js.",
-      "Contributed to the development, testing, and debugging of a video-based web app using React, Tailwind CSS, S3, and Happy Testing.",
-      "Assisted clients in troubleshooting their Shopify stores.",
-      "Exposed in DevOps thru Bitbucket Pipelines CI/CD, Docker and Nginx",
-      "Engaged in training on Robotic Process Automation (RPA) and AI development",
-      "Expanded knowledge of programming languages through training in Rust and Go.",
-      "Experienced agile methodologies and participated in daily scrum meetings using Slack and ClickUp.",
+      "Collaborated with international clients across supply chain, trade, and insurance industries to deliver scalable and user-friendly web applications.",
+      "Served as Senior Software Engineer for the development of three greenfield in-house applications for an Australian life insurance company.",
+      "Played a key role in frontend architecture decisions, including component libraries, state management, code quality standards, and development tooling.",
+      "Built scalable and maintainable applications using Next.js and TypeScript, focusing on performance, reliability, and long-term maintainability.",
+      "Designed and implemented modern UI systems using Chakra UI, Radix UI, shadcn/ui, and Tailwind CSS.",
+      "Performed code reviews and contributed to engineering best practices, maintainability, and development standards across projects.",
     ],
   },
   {
     title: "Software Developer",
-    company_name: "Cell 5",
+    company_name: "Cell 5 — London, England (Remote)",
     icon: cell,
     iconBg: "#383E56",
-    date: "April 2022 - Oct 2022",
+    date: "Apr 2022 - Oct 2022",
     points: [
-      "Contributed to team efforts in adding new features and pages to the web application based on sprint requirements. Collaborated in sprint planning, user story understanding, and actively participated in development",
-      "Updated and maintained a project management application using React.js, TypeScript, Tailwind CSS, Firebase, Figma, Next.js, Google Cloud Platforms, and React Storybook. Translated Figma designs into React code using Tailwind CSS and React Storybook.",
-      "Enhanced clients' design frameworks by adding and updating design components aligned with sprint goals. Utilized Figma designs, Tailwind CSS, and React Storybook for consistent styling and layout.",
-      "Developed components and migration scripts for clients' application features following sprint objectives. Leveraged Figma-based design framework, React, Tailwind CSS, and React Storybook.",
-      "Contributed to debugging and refactoring faulty code to improve software quality and maintainability. Engaged in code review, issue resolution, and ensuring adherence to design framework and coding standards.",
-      "Exposed with Google Cloud Platform",
-      "Experienced agile methodologies such as Kanban and Scrum. Utilized Notion for project management, maintained Kanban boards, and actively participated in Scrum ceremonies including daily stand-ups, sprint planning, and retrospectives.",
+      "Contributed to the development and maintenance of a project management platform for construction companies using React, Next.js, TypeScript, Tailwind CSS, Firebase, Google Cloud, and React Storybook.",
+      "Built and enhanced reusable UI components and design systems based on Figma designs and sprint requirements.",
+      "Developed application features, migration scripts, and frontend components focused on scalability, consistency, and maintainability.",
+      "Collaborated in agile development processes including sprint planning, code reviews, debugging, refactoring, and issue resolution.",
+      "Worked within Scrum and Kanban environments using Notion for project tracking and team collaboration.",
     ],
   },
-  // {
-  //   title: "Hire Me!",
-  //   company_name: "Currently Looking for a Full Time Developer Role!",
-  //   icon: jobsearch,
-  //   iconBg: "#E6DEDD",
-  //   date: "Present",
-  //   points: [
-  //     "TOOK A LONG BREAK DUE TO HEALTH AND PERSONAL REASONS BUT NOW I'M BACK!",
-  //     "I've been continuously updating and developing a portfolio that showcases projects aligned with the latest industry trends, demonstrating proficiency in cutting-edge technologies and staying up-to-date with the ever-evolving tech landscape.",
-  //     "I'm capable of Full stack development using the MERN (MongoDB, Express.js, React.js, Node.js) stack, and I'm proficient in both JavaScript and TypeScript.",
-  //     "I have made projects that involves technologies like Next.js and React Native for building scalable and performant web and mobile applications.",
-  //     "Familiarity with Vue.js and Nuxt.js, enabling development in the Vue ecosystem",
-  //     "Exposure to Python, Go, Flutter, and Rust, allowing for versatility in different programming languages and frameworks.",
-  //     "Currently expanding knowledge in three.js and 3D rendering to explore immersive and interactive web experiences.",
-  //     "Actively engaged in AI development, keeping up with the latest advancements and incorporating AI technologies into projects.",
-  //     "Aspiring to learn C# for game development, with a keen interest in exploring the gaming industry and creating interactive experiences.",
-  //   ],
-  // },
   {
-    title: "Software Engineer",
-    company_name: "Adaca",
-    icon: adaca,
+    title: "Associate Software Engineer",
+    company_name: "Getaka Labs — San Juan City, Philippines",
+    icon: getaka,
     iconBg: "#E6DEDD",
-    date: "Present",
+    date: "Sep 2021 - Mar 2022",
     points: [
-      "Senior React/Typescript Developer for a ASX listed Client that offers Life Insurances. ",
-      "Part of the team that will create internal and External Apps.",
-      "Senior Front End Web Developer for a Client that specializes in supply chain and trade platforms.",
-      "Uses Next JS with Typescript for developing components",
-      "Uses Chakra UI for System Design and Styling",
+      "Developed frontend features for a job search platform, translating Figma prototypes into production-ready interfaces using Next.js, React, Redux-Saga, Prisma, Redis, and SQLite.",
+      "Built full-stack business and investment platforms with CMS functionality using Next.js, React, Tailwind CSS, Node.js, Strapi, and Firebase.",
+      "Developed backend services and infrastructure for a licensure examination reviewer mobile application using Node.js and PostgreSQL.",
+      "Contributed to the development, testing, and debugging of video-based web applications using React, Tailwind CSS, and AWS S3.",
+      "Designed and developed responsive HTML email templates and microsites for an Australian insurance client using React and Tailwind CSS.",
+      "Provided technical support and troubleshooting for Shopify client stores.",
+      "Participated in agile development workflows using Slack, Zoom, and ClickUp, collaborating across daily standups and sprint planning sessions.",
+      "Expanded technical expertise through training in robotic process automation (RPA), AI development, Rust, and Go.",
+    ],
+  },
+  {
+    title: "Software Developer",
+    company_name: "Freelance",
+    icon: mern,
+    iconBg: "#383E56",
+    date: "Sep 2019 - Sep 2021",
+    points: [
+      "Developed full-stack web applications for clients using MongoDB, Express.js, React, and Node.js, delivering end-to-end solutions based on business requirements.",
+      "Built responsive portfolio websites for professionals (including architects and dental clinics) using JavaScript, CSS, and Sass, focusing on performance, responsiveness, and visual presentation.",
+      "Designed and implemented a full-featured e-commerce platform for a local business using React, Node.js, and Strapi, including product management, shopping cart, and payment integration.",
     ],
   },
 ];
@@ -224,6 +217,173 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Cashback Rewards Marketplace (Replica)",
+    description:
+      "Demo replica of a large-scale rewards and cashback platform with memberships, e-commerce, analytics, and customer engagement. Showcases scalable tracking, promotions, and third-party integrations. Replica build — original work under NDA.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prisma/supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind/shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "stripe/klaviyo",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: soon,
+    source_code_link: "https://github.com/rojenrosal",
+  },
+  {
+    name: "Construction PM Platform (Replica)",
+    description:
+      "Demo replica of a project management platform for construction companies with reusable design system components, sprint-based workflows, and Firebase-backed data. Replica build — original work under NDA.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase/gcp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind/storybook",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: soon,
+    source_code_link: "https://github.com/rojenrosal",
+  },
+  {
+    name: "Insurance Premium Calculator (Replica)",
+    description:
+      "Demo replica of a life insurance payments and premium computing application with policy quoting, scheduled payments, and customer-facing dashboards. Replica build — original work under NDA.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "chakra/radix",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: soon,
+    source_code_link: "https://github.com/rojenrosal",
+  },
+  {
+    name: "AI Web IDE (Replica)",
+    description:
+      "Demo replica of a browser-based AI-assisted IDE — code editor, file tree, terminal, and AI chat for code generation, refactoring, and debugging. Replica build — original work under NDA.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "openai/llm",
+        color: "green-text-gradient",
+      },
+      {
+        name: "monaco/xterm",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind/shadcn",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: soon,
+    source_code_link: "https://github.com/rojenrosal",
+  },
+  {
+    name: "Job Board Platform (Replica)",
+    description:
+      "Demo replica of a job posting and search platform — postings, applications, candidate profiles, and employer dashboards. Replica build — original work under NDA.",
+    tags: [
+      {
+        name: "next/react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "redux-saga",
+        color: "green-text-gradient",
+      },
+      {
+        name: "prisma/redis",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "sqlite",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: soon,
+    source_code_link: "https://github.com/rojenrosal",
+  },
+  {
+    name: "Social Media Platform (Replica)",
+    description:
+      "Demo replica of a social media platform — accounts, posts, comments, likes, friends, and a personalized feed. Replica build — original work under NDA.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind/shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs/auth",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: soon,
+    source_code_link: "https://github.com/rojenrosal",
+  },
+  {
+    name: "Fitness/Gym Full Stack APP",
+    description:
+      "A Fitness/Gym app that is made using React/Typescript and allows users to register and Login and choose various workout programs. Developed using the MERN Stack with Tailwind and Framer Motion.",
+    tags: [
+      {
+        name: "react/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mongodb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs/express/auth",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: progress,
+    source_code_link: "https://github.com/",
+  },
   {
     name: "Car Rental",
     description:
@@ -427,149 +587,6 @@ const projects = [
     source_code_link: "https://github.com/rojenrosal/headphones",
   },
 
-  {
-    name: "Fitness/Gym Full Stack APP",
-    description:
-      "A  Fitness/Gym app that is made using React/Typescript and allows users to register and Login and choose various workout programs. Developed using the MERN Stack with Tailwind an Framer Motion.",
-    tags: [
-      {
-        name: "react/typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nodejs/express/auth",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: progress,
-    source_code_link: "https://github.com/",
-  },
-
-  {
-    name: "Full Stack Ecommerce App",
-    description:
-      "A Full Stack Ecommerce App with Admin Dashboard and The Full Store, with also payment technologies installed. Developed using the MERN Stack with Tailwind CSS",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongo",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nodejs/express/auth",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: progress,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Social Media Clone",
-    description:
-      "A complete Social Media Clone in which you can create accounts and make share posts, add friends, comment and like posts. created using the MERN Stack with Material UI",
-    tags: [
-      {
-        name: "react/js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mui",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nodejs/express/auth",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: progress,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Leet Code Clone",
-    description:
-      "A Web Application that shows Leet Code answer and tutorials as well as coding playgrounds. Developed using Next JS and Typescript with Firebase as the backend",
-    tags: [
-      {
-        name: "next/typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: soon,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Mobile Delivery App",
-    description:
-      "A React Native application that is similar to your everyday food Delivery app. it uses Navigation, Redux, Sanity.io Technologies",
-    tags: [
-      {
-        name: "react-native",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sanity.io",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: soon,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Chat GPT Clone",
-    description:
-      "A Clone of an AI Chat Messeger powered by OpenAI API. It's developed using React with Redux for State Mangement and as well as Tailwind for the styling. Node JS and MongoDB are used for the Backend",
-    tags: [
-      {
-        name: "react/js redux",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongo",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nodejs/express",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: soon,
-    source_code_link: "https://github.com/",
-  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
