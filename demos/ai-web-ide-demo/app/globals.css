@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 252 38% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 252 32% 9%;
+    --card-foreground: 210 40% 98%;
+
+    --muted: 252 26% 15%;
+    --muted-foreground: 215 16% 65%;
+
+    --border: 252 22% 18%;
+    --input: 252 22% 18%;
+    --ring: 270 90% 70%;
+
+    --primary: 270 90% 70%;
+    --primary-foreground: 252 47% 11%;
+
+    --accent: 192 90% 60%;
+    --accent-foreground: 252 47% 11%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --radius: 0.75rem;
+  }
+
+  * { border-color: hsl(var(--border)); }
+  html { color-scheme: dark; }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: 0 0 80px -20px hsl(var(--primary) / 0.5);
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+  .text-gradient {
+    background-image: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}

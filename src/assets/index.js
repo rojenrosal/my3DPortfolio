@@ -39,6 +39,14 @@ import travel from "./projects/travel.png";
 import amazon from "./projects/amazon.png";
 import headphones from "./projects/headphones.png";
 
+import cashbackDemo from "./demo/cashback.png";
+import constructionDemo from "./demo/construction.png";
+import insuranceDemo from "./demo/insurance.png";
+import ideDemo from "./demo/ide.png";
+import jobDemo from "./demo/job.png";
+import gymDemo from "./demo/gym.png";
+import socialDemo from "./demo/social.png";
+
 export {
   logo,
   backend,
@@ -77,4 +85,11 @@ export {
   headphones,
   adaca,
   va4u,
+  cashbackDemo,
+  constructionDemo,
+  insuranceDemo,
+  ideDemo,
+  jobDemo,
+  gymDemo,
+  socialDemo,
 };

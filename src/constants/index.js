@@ -5,8 +5,6 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
@@ -15,7 +13,6 @@ import {
   getaka,
   cell,
   mern,
-  soon,
   progress,
   vidchat,
   travel,
@@ -29,6 +26,13 @@ import {
   next,
   adaca,
   va4u,
+  cashbackDemo,
+  constructionDemo,
+  insuranceDemo,
+  ideDemo,
+  jobDemo,
+  gymDemo,
+  socialDemo,
 } from "../assets";
 
 export const navLinks = [
@@ -67,14 +71,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -111,7 +107,7 @@ const technologies = [
 const experiences = [
   {
     title: "Senior Software Engineer (Full Stack)",
-    company_name: "VA4U — Queensland, Australia (Remote)",
+    company_name: "VA4U - Queensland, Australia (Remote)",
     icon: va4u,
     iconBg: "#E6DEDD",
     date: "Aug 2025 - Present",
@@ -128,7 +124,7 @@ const experiences = [
   },
   {
     title: "Senior Software Engineer (Full Stack)",
-    company_name: "Adaca — Taguig City, Philippines (Remote)",
+    company_name: "Adaca - Taguig City, Philippines (Remote)",
     icon: adaca,
     iconBg: "#E6DEDD",
     date: "May 2023 - July 2025",
@@ -143,7 +139,7 @@ const experiences = [
   },
   {
     title: "Software Developer",
-    company_name: "Cell 5 — London, England (Remote)",
+    company_name: "Cell 5 - London, England (Remote)",
     icon: cell,
     iconBg: "#383E56",
     date: "Apr 2022 - Oct 2022",
@@ -157,7 +153,7 @@ const experiences = [
   },
   {
     title: "Associate Software Engineer",
-    company_name: "Getaka Labs — San Juan City, Philippines",
+    company_name: "Getaka Labs - San Juan City, Philippines",
     icon: getaka,
     iconBg: "#E6DEDD",
     date: "Sep 2021 - Mar 2022",
@@ -220,7 +216,7 @@ const projects = [
   {
     name: "Cashback Rewards Marketplace (Replica)",
     description:
-      "Demo replica of a large-scale rewards and cashback platform with memberships, e-commerce, analytics, and customer engagement. Showcases scalable tracking, promotions, and third-party integrations. Replica build — original work under NDA.",
+      "A replica of a large-scale rewards and cashback platform - memberships, e-commerce, analytics, and customer engagement. Built in the shape of production systems I've shipped, wired up with mock data so you can browse stores, dashboards, plans, and a working checkout flow.",
     tags: [
       {
         name: "next/typescript",
@@ -239,13 +235,14 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: soon,
+    image: cashbackDemo,
     source_code_link: "https://github.com/rojenrosal",
+    live_demo_link: "/demos/cashback-rewards-demo/",
   },
   {
     name: "Construction PM Platform (Replica)",
     description:
-      "Demo replica of a project management platform for construction companies with reusable design system components, sprint-based workflows, and Firebase-backed data. Replica build — original work under NDA.",
+      "A replica of a project management platform for construction teams - live 3-week lookahead, daily site diary, and resource tracking. Mirrors the structure of platforms I've built for civil and major-buildings projects, running on mock data you can browse end-to-end.",
     tags: [
       {
         name: "next/typescript",
@@ -260,13 +257,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: soon,
+    image: constructionDemo,
     source_code_link: "https://github.com/rojenrosal",
+    live_demo_link: "/demos/construction-pm-demo/",
   },
   {
     name: "Insurance Premium Calculator (Replica)",
     description:
-      "Demo replica of a life insurance payments and premium computing application with policy quoting, scheduled payments, and customer-facing dashboards. Replica build — original work under NDA.",
+      "A replica of a life insurance quoting and policy management app - an interactive premium calculator with live recalculation, scheduled payments, and a customer dashboard. Adjust the sliders and watch the numbers move.",
     tags: [
       {
         name: "next/typescript",
@@ -281,13 +279,14 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: soon,
+    image: insuranceDemo,
     source_code_link: "https://github.com/rojenrosal",
+    live_demo_link: "/demos/insurance-calculator-demo/",
   },
   {
     name: "AI Web IDE (Replica)",
     description:
-      "Demo replica of a browser-based AI-assisted IDE — code editor, file tree, terminal, and AI chat for code generation, refactoring, and debugging. Replica build — original work under NDA.",
+      "A replica of a browser-based AI-native IDE - file tree, editor pane, terminal, and an AI chat that responds to prompts. Models the shape of modern AI developer tools with a real, interactive UI you can actually type in.",
     tags: [
       {
         name: "next/typescript",
@@ -306,13 +305,14 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: soon,
+    image: ideDemo,
     source_code_link: "https://github.com/rojenrosal",
+    live_demo_link: "/demos/ai-web-ide-demo/",
   },
   {
     name: "Job Board Platform (Replica)",
     description:
-      "Demo replica of a job posting and search platform — postings, applications, candidate profiles, and employer dashboards. Replica build — original work under NDA.",
+      "A replica of a modern job board for product and engineering teams - search and filter postings, view roles, post listings, and manage applicants from an employer dashboard. Every flow is wired up and clickable.",
     tags: [
       {
         name: "next/react",
@@ -331,13 +331,14 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: soon,
+    image: jobDemo,
     source_code_link: "https://github.com/rojenrosal",
+    live_demo_link: "/demos/job-board-demo/",
   },
   {
     name: "Social Media Platform (Replica)",
     description:
-      "Demo replica of a social media platform — accounts, posts, comments, likes, friends, and a personalized feed. Replica build — original work under NDA.",
+      "A replica of a social media platform - a live feed, profiles, comments, likes, and direct messages. Interactive UI with working composer, like toggles, and a real message thread.",
     tags: [
       {
         name: "next/typescript",
@@ -356,33 +357,85 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image: soon,
+    image: socialDemo,
     source_code_link: "https://github.com/rojenrosal",
+    live_demo_link: "/demos/social-media-demo/",
   },
   {
-    name: "Fitness/Gym Full Stack APP",
+    name: "Mobile Gym App (Demo)",
     description:
-      "A Fitness/Gym app that is made using React/Typescript and allows users to register and Login and choose various workout programs. Developed using the MERN Stack with Tailwind and Framer Motion.",
+      "Mobile-first gym and workout tracking app presented as a phone-frame web preview - daily session, programmed workouts, progress charts, and member profile.",
     tags: [
       {
-        name: "react/typescript",
+        name: "next/typescript",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "tailwind/shadcn",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "mobile-first",
         color: "pink-text-gradient",
       },
       {
-        name: "nodejs/express/auth",
+        name: "react-native-style",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: gymDemo,
+    source_code_link: "https://github.com/rojenrosal",
+    live_demo_link: "/demos/mobile-gym-app-demo/",
+  },
+  {
+    name: "Indie Game (Work in Progress)",
+    description:
+      "An indie game in active development - exploring real-time gameplay, physics, and procedural worlds. Built solo as a long-term side project. Coming soon.",
+    tags: [
+      {
+        name: "game-dev",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "canvas/webgl",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "indie",
         color: "yellow-text-gradient",
       },
     ],
     image: progress,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/rojenrosal",
+  },
+  {
+    name: "Inkwell - Reader's Library (Work in Progress)",
+    description:
+      "A community library for user-written literature - short stories, novellas, poetry collections. Authors publish chapters, readers shelve and comment. A cozy, book-shaped reading experience. Coming soon.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind/shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "rich-text",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: progress,
+    source_code_link: "https://github.com/rojenrosal",
   },
   {
     name: "Car Rental",

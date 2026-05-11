@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 214 38% 7%;
+    --foreground: 210 40% 98%;
+
+    --card: 214 32% 10%;
+    --card-foreground: 210 40% 98%;
+
+    --muted: 214 26% 16%;
+    --muted-foreground: 215 16% 65%;
+
+    --border: 214 22% 18%;
+    --input: 214 22% 18%;
+    --ring: 199 90% 55%;
+
+    --primary: 199 90% 55%;
+    --primary-foreground: 222 47% 11%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+
+    --radius: 0.75rem;
+  }
+
+  * { border-color: hsl(var(--border)); }
+  html { color-scheme: dark; }
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .glow-primary {
+    box-shadow: 0 0 80px -20px hsl(var(--primary) / 0.4);
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, hsl(var(--border)) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border)) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  }
+}

@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build:demos": "node scripts/build-demos.mjs",
+    "build:portfolio": "vite build",
+    "build": "npm run build:demos && npm run build:portfolio",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },

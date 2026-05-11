@@ -11,6 +11,11 @@ node_modules
 dist-ssr
 *.local
 
+# Demo build artifacts (rebuilt by scripts/build-demos.mjs)
+demos/*/.next
+demos/*/out
+public/demos
+
 .env
 
 # Editor directories and files
