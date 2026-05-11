@@ -213,55 +213,7 @@ const testimonials = [
 ];
 
 const projects = [
-  {
-    name: "Cashback Rewards Marketplace (Replica)",
-    description:
-      "A replica of a large-scale rewards and cashback platform - memberships, e-commerce, analytics, and customer engagement. Built in the shape of production systems I've shipped, wired up with mock data so you can browse stores, dashboards, plans, and a working checkout flow.",
-    tags: [
-      {
-        name: "next/typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "prisma/supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind/shadcn",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "stripe/klaviyo",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: cashbackDemo,
-    source_code_link: "https://github.com/rojenrosal",
-    live_demo_link: "/demos/cashback-rewards-demo/",
-  },
-  {
-    name: "Construction PM Platform (Replica)",
-    description:
-      "A replica of a project management platform for construction teams - live 3-week lookahead, daily site diary, and resource tracking. Mirrors the structure of platforms I've built for civil and major-buildings projects, running on mock data you can browse end-to-end.",
-    tags: [
-      {
-        name: "next/typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "firebase/gcp",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind/storybook",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: constructionDemo,
-    source_code_link: "https://github.com/rojenrosal",
-    live_demo_link: "/demos/construction-pm-demo/",
-  },
-  {
+    {
     name: "Insurance Premium Calculator (Replica)",
     description:
       "A replica of a life insurance quoting and policy management app - an interactive premium calculator with live recalculation, scheduled payments, and a customer dashboard. Adjust the sliders and watch the numbers move.",
@@ -280,36 +232,10 @@ const projects = [
       },
     ],
     image: insuranceDemo,
-    source_code_link: "https://github.com/rojenrosal",
+    source_code_link: "https://github.com/rojenrosal/my3DPortfolio/tree/main/demos/insurance-calculator-demo",
     live_demo_link: "/demos/insurance-calculator-demo/",
   },
-  {
-    name: "AI Web IDE (Replica)",
-    description:
-      "A replica of a browser-based AI-native IDE - file tree, editor pane, terminal, and an AI chat that responds to prompts. Models the shape of modern AI developer tools with a real, interactive UI you can actually type in.",
-    tags: [
-      {
-        name: "next/typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "openai/llm",
-        color: "green-text-gradient",
-      },
-      {
-        name: "monaco/xterm",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "tailwind/shadcn",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: ideDemo,
-    source_code_link: "https://github.com/rojenrosal",
-    live_demo_link: "/demos/ai-web-ide-demo/",
-  },
-  {
+   {
     name: "Job Board Platform (Replica)",
     description:
       "A replica of a modern job board for product and engineering teams - search and filter postings, view roles, post listings, and manage applicants from an employer dashboard. Every flow is wired up and clickable.",
@@ -332,35 +258,10 @@ const projects = [
       },
     ],
     image: jobDemo,
-    source_code_link: "https://github.com/rojenrosal",
+    source_code_link: "https://github.com/rojenrosal/my3DPortfolio/tree/main/demos/job-board-demo",
     live_demo_link: "/demos/job-board-demo/",
   },
-  {
-    name: "Social Media Platform (Replica)",
-    description:
-      "A replica of a social media platform - a live feed, profiles, comments, likes, and direct messages. Interactive UI with working composer, like toggles, and a real message thread.",
-    tags: [
-      {
-        name: "next/typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind/shadcn",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "nodejs/auth",
-        color: "yellow-text-gradient",
-      },
-    ],
-    image: socialDemo,
-    source_code_link: "https://github.com/rojenrosal",
-    live_demo_link: "/demos/social-media-demo/",
-  },
+ 
   {
     name: "Mobile Gym App (Demo)",
     description:
@@ -384,9 +285,111 @@ const projects = [
       },
     ],
     image: gymDemo,
-    source_code_link: "https://github.com/rojenrosal",
+    source_code_link: "https://github.com/rojenrosal/my3DPortfolio/tree/main/demos/mobile-gym-app-demo",
     live_demo_link: "/demos/mobile-gym-app-demo/",
   },
+   {
+    name: "Social Media Platform (Replica)",
+    description:
+      "A replica of a social media platform - a live feed, profiles, comments, likes, and direct messages. Interactive UI with working composer, like toggles, and a real message thread.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind/shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "nodejs/auth",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: socialDemo,
+    source_code_link: "https://github.com/rojenrosal/my3DPortfolio/tree/main/demos/social-media-demo",
+    live_demo_link: "/demos/social-media-demo/",
+  },
+  {
+    name: "Cashback Rewards Marketplace (Replica)",
+    description:
+      "A replica of a large-scale rewards and cashback platform - memberships, e-commerce, analytics, and customer engagement. Built in the shape of production systems I've shipped, wired up with mock data so you can browse stores, dashboards, plans, and a working checkout flow.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prisma/supabase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind/shadcn",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "stripe/klaviyo",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: cashbackDemo,
+    source_code_link: "https://github.com/rojenrosal/my3DPortfolio/tree/main/demos/cashback-rewards-demo",
+    live_demo_link: "/demos/cashback-rewards-demo/",
+  },
+  {
+    name: "Construction PM Platform (Replica)",
+    description:
+      "A replica of a project management platform for construction teams - live 3-week lookahead, daily site diary, and resource tracking. Mirrors the structure of platforms I've built for civil and major-buildings projects, running on mock data you can browse end-to-end.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase/gcp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind/storybook",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: constructionDemo,
+    source_code_link: "https://github.com/rojenrosal/my3DPortfolio/tree/main/demos/construction-pm-demo",
+    live_demo_link: "/demos/construction-pm-demo/",
+  },
+
+  {
+    name: "AI Web IDE (Replica)",
+    description:
+      "A replica of a browser-based AI-native IDE - file tree, editor pane, terminal, and an AI chat that responds to prompts. Models the shape of modern AI developer tools with a real, interactive UI you can actually type in.",
+    tags: [
+      {
+        name: "next/typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "openai/llm",
+        color: "green-text-gradient",
+      },
+      {
+        name: "monaco/xterm",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind/shadcn",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image: ideDemo,
+    source_code_link: "https://github.com/rojenrosal/my3DPortfolio/tree/main/demos/ai-web-ide-demo",
+    live_demo_link: "/demos/ai-web-ide-demo/",
+  },
+ 
   {
     name: "Indie Game (Work in Progress)",
     description:
